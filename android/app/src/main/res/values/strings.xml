@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lino Life</string>
+    <string name="title_activity_main">Lino Life</string>
+    <string name="package_name">co.linolife.papp</string>
+    <string name="custom_url_scheme">co.linolife.papp</string>
+    <string name="upload_photo_source">Add a photo</string>
+    <string name="upload_take_photo">Take photo</string>
+    <string name="upload_choose_from_gallery">Choose from gallery or files</string>
+</resources>

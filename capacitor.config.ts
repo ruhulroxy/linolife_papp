@@ -1,0 +1,28 @@
+import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'co.linolife.papp',
+  appName: 'Lino Life',
+  webDir: 'www',
+  server: {
+    url: 'https://linolife.co/papp'
+  },
+  android: {
+    // The hosted page uses browser maps. Native Maps eagerly initializes its
+    // renderer on the Activity's main thread, delaying the first app frame.
+    includePlugins: [
+      '@capacitor/barcode-scanner',
+      '@capacitor/camera',
+      '@capacitor/geolocation',
+      '@capacitor/push-notifications',
+      '@capacitor/screen-orientation'
+    ]
+  },
+  plugins: {
+    PushNotifications: {
+      presentationOptions: ['badge', 'sound', 'banner', 'list']
+    }
+  }
+};
+
+export default config;
